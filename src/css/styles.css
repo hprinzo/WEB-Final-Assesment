@@ -1,0 +1,392 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kenia&family=Merriweather:ital,wght@1,300&display=swap'); 
+
+
+ *{
+    margin: 0;
+    padding: 0;
+  }
+
+header
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+     /* background-image: url('../media/Coding.jpg');  */
+    background-color: #000000;
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    justify-content: space-between;
+}
+
+
+  p
+  {
+    width: 500px;
+  }
+  a
+  {
+    text-decoration: none;
+  }
+  /******************************************************************************************/
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 2%;
+
+    background-color: #000000;
+    font-size: 15px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 75%;
+    
+  }
+  
+  
+  .navbar_toggle {
+    margin-left: 5%;
+    font-size: 30px;
+    color: #ffffff;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: none;
+  }
+  
+  
+  .logo{
+    margin-left: 5%;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Kenia', cursive;
+
+  }
+  .logo_header{
+    display: flex;
+    margin-left: 2%;
+  }
+  
+  .main_nav{
+    display: flex;
+    width: 50%;
+    float: right;
+    margin-right: 2%;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .main_nav li:hover{
+    background-color: #29a19c;
+  }
+  
+  .main_nav li{
+    display: inline;
+    color: #ffffff;
+  }
+  .main_nav li a{
+    color: #ffffff;
+  }
+  
+  @media only screen and (max-width : 992px)
+  {
+  
+    .navbar{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100vw;
+      padding-top: 2%;
+      background-color: #000000;
+      font-size: 20px;
+    }
+  
+    .main_nav{
+      display: none;
+    }
+  
+    .show_nav{
+      padding-top: 2%;
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  
+    .main_nav li{
+      width: 100%;
+      height: 50px;
+      font-size: 25px;
+      justify-content: center;
+      text-align: center;
+      padding: 0%;
+    }
+    .navbar_toggle {
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 30px;
+      color: #ffffff;
+      background: transparent;
+      border-color: transparent;
+      transition: all 0.3s linear;
+      cursor: pointer;
+      display: block;
+    }
+    .logo_header{
+      width: 100%;
+      justify-content: space-between;
+      margin-right: 2%;
+    }
+    
+    
+  }
+
+/**********************************************************************************/
+  .center 
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+
+input
+{
+    border-radius: 4px;
+    margin: 5px;
+}
+
+textarea 
+{
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(114, 113, 113);
+    border-radius: 4px;
+    background-color: #fff9f9;
+    resize: none;
+}
+
+img
+{
+    max-height: 450px;
+    max-width: 450px;
+}
+
+#greet
+{
+   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:  #000000;
+    color: #971414;
+    font-size: large;
+        
+    height: 450px;
+    margin-bottom: 1.5rem;
+    position: 0;
+}
+
+
+#about
+{
+    
+    background-color:  #757575; 
+    display : flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    scroll-margin-top: 110px;
+}
+
+
+
+#edu
+{
+    background-color:  #111f4d;
+    scroll-margin-top: 100px;
+    margin-bottom: 1.5rem;
+}
+
+#skill
+{
+    background-color: #757575;
+    height: 250px;
+    margin-bottom: 1.5rem;
+    scroll-margin-top: 110px;
+}
+
+#contactMe
+{
+    background-color:  #111f4d;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 110px;
+    
+}
+#honesty
+{
+    background-color:  #cd9984;
+    scroll-margin-top: 500px;
+    
+}
+
+.buttons
+{
+    color : white;;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    border: 3px;
+    padding: 10px;
+    margin-left: 100px;
+  }
+  main
+  {
+    margin: 0;
+    max-width: none;
+  }
+form 
+  {
+    background-color: #fff9f9;
+    border: 5px solid var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow) var(--color-shadow);
+    /* display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column; */
+    height: 900px;
+    max-width: var(--width-card-wide);
+    min-width: var(--width-card);
+    padding: 1.5rem;
+    text-align:left;
+}
+nav
+{
+    margin-bottom : 0;
+}
+.about_content
+{
+    
+    box-sizing: border-box;
+    backgrounD: #0000 ;
+    border: 0.3rem solid #000000;
+    color: #ffffff;
+    border-right: max-content;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem ;
+    flex-wrap: wrap;
+}
+.hdrs
+{
+    font-family: 'Zen Dots', cursive;
+    text-decoration: underline;
+}
+.hidden
+{
+    display: none;
+}
+fieldset
+{
+    border: none;
+}
+.form-control span
+{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+.form-control small
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.edu_content
+{
+    
+    box-sizing: border-box;
+    backgrounD: #0000 ;
+    border: 0.3rem solid #000000; 
+    color: #ffffff;
+    border-right: max-content;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem ;
+    flex-wrap: wrap;
+}
+
+.skill-content
+{
+    
+    box-sizing: border-box;
+    backgrounD: #0000 ;
+    border: 0.3rem solid #000000; 
+    color: #ffffff;
+    border-right: max-content;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem ;
+    flex-wrap: wrap;
+}
+
+
+img
+{
+    width: 50px;
+    height: 50px;
+
+}
+
+
+
+@media only screen and (max-width : 545px)
+{
+    .about_content
+    {
+        flex-wrap: wrap;
+    }
+    .right
+    {
+        width: 0;
+        margin-left: 0;    
+    }
+    
+    form
+    {
+        width: 0;
+    }
+
+    #about-info > p
+    {
+        width: 100%;
+    }
+
+}
+
+.spidey
+{
+    width: auto;
+    height: auto ;
+
+}
+footer
+{
+    color: #ffffff;
+}

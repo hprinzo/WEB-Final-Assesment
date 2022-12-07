@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Change this to your name-->
+    <meta name="Prince" content="Your Name" />
+    <meta name="description" content=" WEB222 Fall 2022 Assement" />
+
+    <title>Desinger Web</title>
+
+    <!-- Classless CSS Stylesheet - https://andybrewer.github.io/mvp/ -->
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- Optional CSS Overrides -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    
+        <nav class="navbar">
+            <div class="logo_header">
+              <a href="#" class="logo">PA</a>
+              <button class="navbar_toggle">
+                <span class="material-symbols-outlined">
+                    menu
+                    </span>
+              </button>
+            </div>
+        
+            
+            <ul class="main_nav">
+              <li>
+                <a href="#" class="nav_links">Home</a>
+              </li>
+              
+              <li>
+                <a href="#about" class="nav_links">About Me</a>
+              </li>
+              <li>
+                <a href="#edu" class="nav_links">Education</a>
+              </li>
+              <li>
+                <a href="#skill" class="nav_links">Skills</a>
+              </li>
+             
+              <li>
+                <a href="#contactMe" class="nav_links">Contact Me</a>
+              </li>
+              <li>
+                <a href="#honesty" class="nav_links">Academic Honesty</a>
+              </li>
+            </ul>
+              
+          </nav>
+      
+    
+
+
+    <main id = "greet">
+     
+           
+                <img src="./media/Spider-Man.jpg" alt="Spider-Man" class="spidey">
+                <p class="greettext">
+                <h1>Prince Abiy</h1>
+                Aspiring Programmer</p>
+             
+                <button style="margin: 5px;">
+                    <a class = "buttons" href="./media/resume.pdf" download="resume.pdf">Resume</a> 
+                    <span class="material-symbols-outlined">
+                        download
+                        </span>
+                </button>
+                
+                <button style="margin: 5px;">
+                <a class = "buttons"href="#contactMe">Contact Me</a>
+                </button>
+        
+           
+    
+    </main>   
+
+        
+    <main class="infographic" id = "about">
+        <div class="hdrs">
+            <h2>About me</h2>  
+        </div>    
+        <div class="about_content">
+            
+            <div id="about-info">
+                    
+                <p>My name is Prince Abiy, I was born in Addis Ababa, Ethiopia on Apr 19, 2002. I have one little sister 2 years younger than me. Funny enough she is the reason I 
+                    got into software development, and after that I just simply fell in love with this field and now aspire to be a developer and live a lavish life !
+                </p>
+            </div>
+             
+                <div class="right">
+                <p>
+                    <u><h2>Basic Information</h2></u>
+                    <span class="material-symbols-outlined">
+                        calendar_month
+                    </span> Age: 20 <br>
+                    <span class="material-symbols-outlined">
+                         mail
+                    </span>Email: pabiy@myseneca.ca<br>
+                    <span class="material-symbols-outlined">
+                        language
+                    </span> Language: English, Amharic, Arabic <br>
+                    <span class="material-symbols-outlined">
+                         school
+                    </span> Section: ZEE <br>
+                    <span class="material-symbols-outlined">
+                        badge
+                    </span> Student ID: 133240218 <br>
+                    <span class="material-symbols-outlined">
+                        login
+                    </span> Instructor: Mohammad Shamas <br>
+                </p>
+            </div>
+            </div>
+
+    </main>
+
+
+    <main class = "education" id ="edu">
+
+        <div class="hdrs">
+            <h2>Education</h2>  
+        </div>
+            <div class = "edu_content">
+            <div>
+                <span class="material-symbols-outlined">
+                    school
+                </span>   High School Diploma, Graduated at Addis Global Academy in Addis Ababa, Ethiopia<br>
+
+            </div>
+            
+            <div>
+                <span class="material-symbols-outlined">
+                    square_foot
+                </span>  Advanced Diploma Degree, Currently learning the CPA program at Seneca College
+            </div> 
+       </div> 
+
+    </main>
+
+    <main class="skills" id="skill">
+
+        <div class="hdrs">
+            <h2>Skills</h2>  
+            <div class="skill-content">
+                <img src="./media/oracle.svg"></img>
+                <img src="./media/c.svg"></img>
+                <img src="./media/c-plusplus.svg">++</img>
+                <img src="./media/mongodb-icon.svg"></img>
+                <img src="./media/html-5.svg"></img>
+                <img src="./media/javascript.svg"></img>
+                <img src="./media/css-3.svg"></img>
+            </div>
+        </div>
+        
+
+    </main>
+
+
+
+
+
+    <main id ="contactMe">
+        <div class="hdrs">
+            <h2>Contact Me</h2>  
+        </div>
+    
+         <form method ="post" action="https://httpbin.org/post"> <!--on submit in js -->
+        
+     
+        <label>Name*: </label> <input name = "Name" type="text" required >  <br>
+        <label>Email*: </label> <input name = "email" type="email" required> <br>
+        <label>Street Address*: </label> <input name = "street_address" type="text" required><br>
+        <label></label> <input name = "Street_address" type="text" placeholder="Apt, Suite, Unit, Building"><br>
+        <label>Province*: </label> <input name = "province" list ="province"type="text" required><br>
+            <datalist id ="province">
+                <option>Alberta</option>
+                <option>British Colombia</option>
+                <option >Manitoba</option>
+                <option >New Brunswick</option>
+                <option >Newfoundland and Labrador</option>
+                <option >Northwest Territories</option>
+                <option >Nova Scotia</option>
+                <option >Nunavut</option>
+                <option >Ontario</option>
+                <option >Prince Edward Island</option>
+                <option >Quebec</option>
+                <option >Saskatchewan</option>
+                <option >Yukon</option>
+
+            </datalist>
+        
+            <label>Postal Code*: </label> <input name = "postal_code" type="text" id="postcd" required>
+           <fieldset>
+            <label>Topic:</label> 
+                <li><input name = "topic" type="radio" value="Job Offer" >Job Offer</li>
+                <li><input name = "topic" type="radio" value="School" >School</li>
+                <li><input name = "topic" type="radio" id="otherbtn">Other </li><input id="txtbox" type ="text" class = "hidden">
+                </fieldset>
+           <br> <label>Phone Number <input name="phone_no" input = tel id="phone_num"></label> 
+            <!--- js input box for topic-->
+            <br> <label>Message: </label> <textarea></textarea>
+                <div id="errors"> </div>
+            <div>
+                <input type="submit" value="submit">
+                <input type="reset">
+                
+             </div>
+            
+        </form>
+
+        
+
+    </main>
+            
+    <main id ="honesty">
+        <div class="hdrs">
+            <h2>Academic Honesty</h2>  
+        </div>
+
+        <article>
+            WEB222 Final Assessment
+ 
+            I declare that this assignment is my own work in accordance with
+            Seneca Academic Policy. No part of this assignment has been
+            copied manually or electronically from any other source
+            (including web sites) or distributed to other students.
+            <br>
+           <br> Name:       Prince Abiy
+           <br> Student ID: 133240218
+           <br> Date:       Dec 07, 2022
+ 
+
+        </article>
+
+
+
+
+
+    </main>
+
+
+
+    
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+ 
+    <footer>
+    
+        Spider-Man photo :<br> 
+        <a rel=&quot;nofollow&quot; class=&quot;external autonumber&quot; href=&quot;https://vignette.wikia.nocookie.net/marveldatabase/images/1/1d/Web_of_Spider-Man_Vol_1_129.1.jpg&quot;&gt;[1]&lt;/a&gt;, href="//en.wikipedia.org/wiki/File:Web_of_Spider-Man_Vol_1_129-1.png" title="Fair use of copyrighted material in the context of Spider-Man">Fair use</a>, <a href="https://en.wikipedia.org/w/index.php?curid=58461384">Link</a>
+        By Mike McKone and Morry Hollowell / Marvel Comics - &lt;
+                
+   
+     </footer>
+ 
+ 
+ 
+  </body>
+
+ 
+</html>
